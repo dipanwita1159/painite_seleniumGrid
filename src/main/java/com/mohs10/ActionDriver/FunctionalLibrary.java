@@ -26,26 +26,26 @@ public class FunctionalLibrary
 
 
 	//wait for Element Method
-	public static void waitForElement(WebDriver driver,String Locator_Name, String Locator_Vlaue, String TestData) 
-	{
-		WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(TestData));
-		if(Locator_Name.equalsIgnoreCase("xpath")) 
-		{
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locator_Vlaue)));
-		}
-		else if (Locator_Name.equalsIgnoreCase("id")) 
-		{
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(Locator_Vlaue)));
-		}
-		else if(Locator_Name.equalsIgnoreCase("name"))
-		{
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(Locator_Vlaue)));
-		}
-		else if(Locator_Name.equalsIgnoreCase("linktext"))
-		{
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(Locator_Vlaue)));
-		}
-	}//end of method
+	//public static void waitForElement(WebDriver driver,String Locator_Name, String Locator_Vlaue, String TestData) 
+	//{
+		//WebDriverWait wait = new WebDriverWait(driver, Integer.parseInt(TestData));
+		//if(Locator_Name.equalsIgnoreCase("xpath")) 
+		//{
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(Locator_Vlaue)));
+		//}
+		//else if (Locator_Name.equalsIgnoreCase("id")) 
+		//{
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(Locator_Vlaue)));
+		//}
+		//else if(Locator_Name.equalsIgnoreCase("name"))
+		//{
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(Locator_Vlaue)));
+		//}
+		//else if(Locator_Name.equalsIgnoreCase("linktext"))
+		//{
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(Locator_Vlaue)));
+		//}
+	//}//end of method
 
 
 	//Method for Text box
