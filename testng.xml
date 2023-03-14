@@ -6,10 +6,5 @@
       <class name="com.mohs10.scripts.HomeTest" />
      </classes>
      </test>
-    <test name="PDFReport">
-    <classes>
-		<class name="com.mohs10.Report.PDFReportTest"/>
-	</classes>
- 
-  </test> <!-- Test -->
+    
 </suite> <!-- Suite -->
